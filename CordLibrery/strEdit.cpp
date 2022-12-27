@@ -1,9 +1,3 @@
-#include <iostream>
-#include <stdlib.h>
-#include <string.h>
-#include <conio.h>
-#include <windows.h>
-#include <WinUser.h>	/
 #include "Header.h"
 
 #define MAXSTRLÅN 80
@@ -49,8 +43,6 @@ void _InsertCh(char* str, int buffer_size, int& cursor, int& term, char symb)
 	if (term != buffer_size - 1) term++;
 	for (int i = term - 1; i > cursor; i--)
 		str[i] = str[i - 1];
-
-
 
 	str[cursor++] = symb;
 	str[term] = '\0';
